@@ -4,16 +4,16 @@ import org.pu.oop.model.api.Polygon;
 
 public class Quadrilateral implements Polygon {
 
-    private final int sideA;
-    private final int sideB;
+    private final double sideA;
+    private final double sideB;
     private static final int numberOfSides = 2;
 
     //constructor for squares
-    public Quadrilateral(int side) {
+    public Quadrilateral(double side) {
         sideA = sideB = side;
     }
 
-    public Quadrilateral(int a, int b) {
+    public Quadrilateral(double a, double b) {
         sideA = a;
         sideB = b;
     }
@@ -24,6 +24,14 @@ public class Quadrilateral implements Polygon {
 
     public boolean isSquare() {
         return sideA == sideB;
+    }
+
+    public int getFace() {
+        return (int) (sideA * sideB);
+    }
+
+    public double getPerimeter() {
+        return (sideA * 2) + (sideB * 2);
     }
 
 }
