@@ -17,7 +17,7 @@ public class Circle implements Figure {
     }
 
     public double getPerimeter() {
-        if (this.perimeter == 0.0) {
+        if (isPerimeterSet()) {
             calculatePerimeter();
         }
         return this.perimeter;
@@ -33,5 +33,9 @@ public class Circle implements Figure {
 
     public void setRadius(int radius) {
         this.radius = radius;
+    }
+
+    private boolean isPerimeterSet() {
+        return this.perimeter == 0.0;
     }
 }
