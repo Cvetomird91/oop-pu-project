@@ -76,7 +76,6 @@ public class Tryangle implements Polygon {
                 (perimeter - b) * (perimeter - c);
 
         return Math.sqrt(expr);
-
     }
 
 }
