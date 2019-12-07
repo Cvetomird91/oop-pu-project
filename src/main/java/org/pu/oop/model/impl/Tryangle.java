@@ -52,4 +52,31 @@ public class Tryangle implements Polygon {
                 .count() == 2;
     }
 
+    public double getPerimeter() throws MissingSidesException {
+        if (sides.isEmpty() || sides.size() != 3) {
+            throw new MissingSidesException();
+        }
+
+        int total = 0;
+        for (int i = 0; i < sides.size(); i++) {
+            total += sides.get(i);
+        }
+
+        return (double) total;
+    }
+
+    //get a triangle's area using Heron's formula
+    public double getTriangleArea() throws MissingSidesException {
+        double perimeter = getPerimeter();
+        double a = sides.get(0);
+        double b = sides.get(1);
+        double c = sides.get(2);
+
+        double expr = perimeter * (perimeter - a) *
+                (perimeter - b) * (perimeter - c);
+
+        return Math.sqrt(expr);
+
+    }
+
 }
