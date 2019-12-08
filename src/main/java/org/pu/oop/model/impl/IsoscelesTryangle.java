@@ -2,8 +2,11 @@ package org.pu.oop.model.impl;
 
 import org.pu.oop.exceptions.MissingSidesException;
 
+import java.util.Collections;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class IsoscelesTryangle extends Tryangle {
@@ -16,6 +19,7 @@ public class IsoscelesTryangle extends Tryangle {
         super(a, b, c);
         setBase();
         setLeg();
+        setHeight();
     }
 
     @Override
@@ -29,8 +33,11 @@ public class IsoscelesTryangle extends Tryangle {
     private void setBase() throws MissingSidesException {
         //first check if tryangle is isosceles
         isIsosceles();
-        base = sides.stream()
-                .distinct().collect(Collectors.toList()).get(0);
+        for (Double side: sides) {
+            if (Collections.frequency(sides, side ) == 1) {
+                this.base = side;
+            }
+        }
     }
 
     private void setLeg() {
