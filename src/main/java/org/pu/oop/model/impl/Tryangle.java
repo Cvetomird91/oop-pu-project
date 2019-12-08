@@ -72,9 +72,6 @@ public class Tryangle implements Polygon {
         double b = sides.get(1);
         double c = sides.get(2);
 
-        double expr = perimeter * (perimeter - a) *
-                (perimeter - b) * (perimeter - c);
-
         return Math.pow(perimeter * (perimeter - a) *
                 (perimeter - b) * (perimeter - c), 0.5);
     }

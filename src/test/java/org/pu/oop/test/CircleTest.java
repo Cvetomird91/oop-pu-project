@@ -42,4 +42,21 @@ public class CircleTest {
         }
         writer.close();
     }
+
+    @Test
+    public void circleMetricsWithLimit (){
+        for (Double radius :radiuses) {
+            //if the radius is longer than 6.0 continue
+            if (radius > 6.0) {
+                continue;
+            }
+
+            Circle circle = new Circle(radius);
+
+            StringBuffer stringBuffer = new StringBuffer();
+            stringBuffer.append("circle area: " + circle.getCircleArea() + ", radius: " + circle.getRadius());
+
+            System.out.println(stringBuffer.toString());
+        }
+    }
 }

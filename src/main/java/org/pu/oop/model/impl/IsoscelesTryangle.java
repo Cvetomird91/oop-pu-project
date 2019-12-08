@@ -4,9 +4,7 @@ import org.pu.oop.exceptions.MissingSidesException;
 
 import java.util.Collections;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class IsoscelesTryangle extends Tryangle {
