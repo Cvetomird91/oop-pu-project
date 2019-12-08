@@ -36,6 +36,7 @@ public class IsoscelesTryangle extends Tryangle {
         for (Double side: sides) {
             if (Collections.frequency(sides, side ) == 1) {
                 this.base = side;
+                break;
             }
         }
     }

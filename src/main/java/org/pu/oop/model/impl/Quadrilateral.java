@@ -6,7 +6,7 @@ public class Quadrilateral implements Polygon {
 
     private final double sideA;
     private final double sideB;
-    private static final int numberOfSides = 2;
+    private static final int numberOfSides = 4;
 
     //constructor for squares
     public Quadrilateral(double side) {
