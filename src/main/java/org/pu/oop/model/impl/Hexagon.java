@@ -21,7 +21,7 @@ public class Hexagon implements Polygon {
         side = defaultSideSize;
     }
 
-    public double getParameter() throws MissingSidesException {
+    public double getPerimeter() throws MissingSidesException {
         if (side == 0 || side < 0) {
             throw new MissingSidesException("Hexagon side is 0 or less than zero");
         }
@@ -31,6 +31,10 @@ public class Hexagon implements Polygon {
 
     public int getFace() {
         return (int) (((3 * (Math.sqrt(3))) / 2) * (side * side));
+    }
+
+    public double getArea() {
+        return (( 3 * Math.sqrt(3)) / 2) * (side * side);
     }
 
 }
