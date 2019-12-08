@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Tryangle implements Polygon {
 
-    private static List<Integer> sides;
+    private static List<Double> sides;
 
     static {
         sides = new ArrayList<>();
@@ -19,25 +19,25 @@ public class Tryangle implements Polygon {
     }
 
     //constructor for equal sided tryangle
-    public Tryangle(int a) {
-        int b = a;
-        int c = a;
+    public Tryangle(double a) {
+        double b = a;
+        double c = a;
         sides.add(a);
         sides.add(b);
         sides.add(c);
     }
 
-    public Tryangle(int a, int b, int c) {
+    public Tryangle(double a, double b, double c) {
         sides.add(a);
         sides.add(b);
         sides.add(c);
     }
 
-    public boolean isEquilateral() throws MissingSidesException {
+    private boolean isEquilateral() throws MissingSidesException {
         if (sides.isEmpty() || sides.size() != 3) {
             throw new MissingSidesException();
         }
-        int a = sides.get(0);
+        double a = sides.get(0);
         return sides.stream()
                 .allMatch(side -> side == a);
     }
@@ -67,7 +67,7 @@ public class Tryangle implements Polygon {
 
     //get a triangle's area using Heron's formula
     public double getTriangleArea() throws MissingSidesException {
-        double perimeter = getPerimeter();
+        double perimeter = getPerimeter() / 2.0d;
         double a = sides.get(0);
         double b = sides.get(1);
         double c = sides.get(2);
