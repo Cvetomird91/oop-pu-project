@@ -35,6 +35,10 @@ public class Circle implements Figure {
         this.radius = radius;
     }
 
+    public void setRadius(int diameter) {
+        this.radius = (double) (diameter / 2 );
+    }
+
     public double getCircleArea() {
         if (!isRadiusSet()) {
             throw new IllegalStateException("Circle radious is not set!");

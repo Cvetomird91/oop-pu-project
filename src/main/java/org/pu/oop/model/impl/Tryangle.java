@@ -33,7 +33,7 @@ public class Tryangle implements Polygon {
         sides.add(c);
     }
 
-    private boolean isEquilateral() throws MissingSidesException {
+    protected boolean isEquilateral() throws MissingSidesException {
         if (sides.isEmpty() || sides.size() != 3) {
             throw new MissingSidesException();
         }
@@ -66,7 +66,7 @@ public class Tryangle implements Polygon {
     }
 
     //get a triangle's area using Heron's formula
-    public double getTriangleArea() throws MissingSidesException {
+    public double getTryangleArea() throws MissingSidesException {
         double perimeter = getPerimeter() / 2.0d;
         double a = sides.get(0);
         double b = sides.get(1);

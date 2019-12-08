@@ -18,9 +18,13 @@ public class TryangleTest {
 
     @Test
     public void getTryangleFace() {
+        int area;
+
         try {
             Tryangle tryangle = new Tryangle(3);
-            System.out.println(tryangle.getTriangleArea());
+            System.out.println(tryangle.getTryangleArea());
+            area = (int) tryangle.getTryangleArea();
+            System.out.println("This is the area casted to integer value: " + area);
         } catch (MissingSidesException e) {
             System.out.println(e);
         }

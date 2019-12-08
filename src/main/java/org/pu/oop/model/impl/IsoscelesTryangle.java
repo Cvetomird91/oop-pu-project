@@ -48,7 +48,7 @@ public class IsoscelesTryangle extends Tryangle {
     }
 
     @Override
-    public double getTriangleArea() throws MissingSidesException {
+    public double getTryangleArea() throws MissingSidesException {
         return (base /2) * height;
     }
 
