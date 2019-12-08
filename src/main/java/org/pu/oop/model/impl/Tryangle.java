@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Tryangle implements Polygon {
 
-    private static List<Double> sides;
+    protected static List<Double> sides;
 
     static {
         sides = new ArrayList<>();

@@ -4,7 +4,7 @@ import org.pu.oop.model.api.Figure;
 
 public class Circle implements Figure {
 
-    private int radius;
+    private double radius;
     private double perimeter;
     private static final double PI = Math.PI;
 
@@ -12,7 +12,7 @@ public class Circle implements Figure {
         this.radius = 0;
     }
 
-    public Circle(int radius) {
+    public Circle(double radius) {
         this.radius = radius;
     }
 
@@ -28,14 +28,26 @@ public class Circle implements Figure {
     }
 
     public double getRadius() {
-        return (double) this.radius;
+        return this.radius;
     }
 
-    public void setRadius(int radius) {
+    public void setRadius(double radius) {
         this.radius = radius;
     }
 
+    public double getCircleArea() {
+        if (!isRadiusSet()) {
+            throw new IllegalStateException("Circle radious is not set!");
+        }
+        return PI * (radius * radius);
+    }
+
     private boolean isPerimeterSet() {
+        //the default value of a double is 0.0
         return this.perimeter == 0.0;
+    }
+
+    private boolean isRadiusSet() {
+        return this.radius == 0.0;
     }
 }
