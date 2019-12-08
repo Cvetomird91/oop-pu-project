@@ -48,10 +48,10 @@ public class Circle implements Figure {
 
     private boolean isPerimeterSet() {
         //the default value of a double is 0.0
-        return this.perimeter == 0.0;
+        return !(this.perimeter == 0.0);
     }
 
     private boolean isRadiusSet() {
-        return this.radius == 0.0;
+        return !(this.radius == 0.0);
     }
 }

@@ -1,0 +1,5 @@
+circle area: 28.274333882308138, radius: 3.0
+circle area: 50.26548245743669, radius: 4.0
+circle area: 98.5203456165759, radius: 5.6
+circle area: 144.41398773727704, radius: 6.78
+circle area: 275.5278073561327, radius: 9.365
