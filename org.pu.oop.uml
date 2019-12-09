@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.pu.oop.model.impl</OriginalElement>
+  <nodes>
+    <node x="649.5" y="101.0">org.pu.oop.model.impl.Circle</node>
+    <node x="704.5" y="403.0">org.pu.oop.model.impl.Hexagon</node>
+    <node x="610.0" y="0.0">org.pu.oop.model.api.Figure</node>
+    <node x="487.5" y="201.5">org.pu.oop.model.api.Polygon</node>
+    <node x="135.5" y="413.5">org.pu.oop.model.impl.Tryangle</node>
+    <node x="432.5" y="403.0">org.pu.oop.model.impl.Quadrilateral</node>
+    <node x="261.0" y="682.0">org.pu.oop.model.impl.IsoscelesTryangle</node>
+    <node x="0.0" y="748.5">org.pu.oop.model.impl.EquilateralTryangle</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.pu.oop.model.impl.Circle" target="org.pu.oop.model.api.Figure">
+      <point x="0.0" y="-126.0" />
+      <point x="759.5" y="76.0" />
+      <point x="683.5" y="76.0" />
+      <point x="24.5" y="25.5" />
+    </edge>
+    <edge source="org.pu.oop.model.impl.Tryangle" target="org.pu.oop.model.api.Polygon">
+      <point x="0.0" y="-104.0" />
+      <point x="274.0" y="378.0" />
+      <point x="511.16666666666663" y="378.0" />
+      <point x="-47.33333333333337" y="25.5" />
+    </edge>
+    <edge source="org.pu.oop.model.impl.Hexagon" target="org.pu.oop.model.api.Polygon">
+      <point x="0.0" y="-114.5" />
+      <point x="808.5" y="378.0" />
+      <point x="605.8333333333334" y="378.0" />
+      <point x="47.33333333333337" y="25.5" />
+    </edge>
+    <edge source="org.pu.oop.model.impl.EquilateralTryangle" target="org.pu.oop.model.impl.Tryangle">
+      <point x="0.0" y="-48.5" />
+      <point x="120.5" y="657.0" />
+      <point x="204.75" y="657.0" />
+      <point x="-69.25" y="104.0" />
+    </edge>
+    <edge source="org.pu.oop.model.impl.IsoscelesTryangle" target="org.pu.oop.model.impl.Tryangle">
+      <point x="0.0" y="-115.0" />
+      <point x="427.5" y="657.0" />
+      <point x="343.25" y="657.0" />
+      <point x="69.25" y="104.0" />
+    </edge>
+    <edge source="org.pu.oop.model.api.Polygon" target="org.pu.oop.model.api.Figure">
+      <point x="0.0" y="-25.5" />
+      <point x="558.5" y="76.0" />
+      <point x="634.5" y="76.0" />
+      <point x="-24.5" y="25.5" />
+    </edge>
+    <edge source="org.pu.oop.model.impl.Quadrilateral" target="org.pu.oop.model.api.Polygon">
+      <point x="0.0" y="-114.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.517799352750809" x="1215.3781250000002" y="698.5875000000001" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
