@@ -22,8 +22,8 @@ public class QuadrilateralTest {
             Quadrilateral quadrilateral = new Quadrilateral(Double.parseDouble(data[0]), Double.parseDouble(data[1]));
 
             System.out.println("The fiqure is a square: " + quadrilateral.isSquare());
-            System.out.println("Get perimeter" + quadrilateral.getPerimeter());
-            System.out.println("Get area" + quadrilateral.getFace());
+            System.out.println("Perimeter: " + quadrilateral.getPerimeter());
+            System.out.println("Area: " + quadrilateral.getFace());
         }
     }
 }
