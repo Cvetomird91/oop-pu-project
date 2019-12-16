@@ -6,10 +6,10 @@
     <node x="627.5" y="101.0">org.pu.oop.model.impl.Circle</node>
     <node x="432.5" y="403.0">org.pu.oop.model.impl.Hexagon</node>
     <node x="588.0" y="0.0">org.pu.oop.model.api.Figure</node>
-    <node x="135.5" y="413.5">org.pu.oop.model.impl.Tryangle</node>
     <node x="465.5" y="201.5">org.pu.oop.model.api.Polygon</node>
-    <node x="660.5" y="403.0">org.pu.oop.model.impl.Quadrilateral</node>
+    <node x="135.5" y="413.5">org.pu.oop.model.impl.Tryangle</node>
     <node x="261.0" y="682.0">org.pu.oop.model.impl.IsoscelesTryangle</node>
+    <node x="660.5" y="403.0">org.pu.oop.model.impl.Quadrilateral</node>
     <node x="0.0" y="748.5">org.pu.oop.model.impl.EquilateralTryangle</node>
   </nodes>
   <notes />
@@ -55,9 +55,9 @@
       <point x="47.33333333333337" y="25.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.871244635193133" x="456.5" y="466.0" />
+  <settings layout="Hierarchic Group" zoom="0.871244635193133" x="457.0" y="466.0" />
   <SelectedNodes>
-    <node>org.pu.oop.model.impl.Tryangle</node>
+    <node>org.pu.oop.model.api.Polygon</node>
   </SelectedNodes>
   <Categories>
     <Category>Fields</Category>
